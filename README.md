@@ -6,4 +6,4 @@ The server provide RESTful web services for the pull-based interaction between t
 
 ## Server Architecture
 
-![GitHub Logo](/documentation/images/taxi-booking-microservice-architecture.pngpng)
+![taxi-booking-microservice-architecture](/documentation/images/taxi-booking-microservice-architecture.png)
