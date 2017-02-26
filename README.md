@@ -83,11 +83,17 @@ The server provide RESTful web services for the pull-based interaction between t
 * A controller class for receiving and handling all booking related transactions
 
 	POST: makeBooking
+	
 	GET: bookingHistory
+	
 	GET: findBooking
+	
 	GET: findBookingsForUser
+	
 	GET: incompleteBookings
+	
 	POST: updateBooking
+	
 	POST: acceptBooking
 	
 
