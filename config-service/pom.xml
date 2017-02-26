@@ -11,5 +11,12 @@
 	<groupId>com.taxibooking.config</groupId>
 	<artifactId>config-service</artifactId>
 	<packaging>jar</packaging>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-server</artifactId>
+		</dependency>
+	</dependencies>
 
 </project>
