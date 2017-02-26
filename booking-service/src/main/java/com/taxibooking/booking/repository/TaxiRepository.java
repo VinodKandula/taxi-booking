@@ -4,6 +4,7 @@ import javax.transaction.Transactional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import com.taxibooking.booking.model.Account;
 import com.taxibooking.booking.model.taxi.Taxi;
 
 /**
@@ -14,5 +15,6 @@ import com.taxibooking.booking.model.taxi.Taxi;
 @Transactional
 public interface TaxiRepository extends JpaRepository<Taxi, Long> {
 
+	public Taxi findByAccount(Account account);
 
 }

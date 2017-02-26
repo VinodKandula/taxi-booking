@@ -14,5 +14,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @author vinodkandula
  */
 @Transactional
-public interface AccountRepository extends JpaRepository<Account, Long> {
+public interface AccountRepository extends JpaRepository<Account, String> {
 }
