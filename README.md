@@ -49,12 +49,18 @@ The server provide RESTful web services for the pull-based interaction between t
 	GET: http://localhost:8000/v1/taxi/{id}
 
 	POST: http://localhost:8000/v1/taxi/{id}/location
+		Request: {
+					"latitude": 51.763366,
+					"longitude": -0.22309
+				 }
 
 ## GOOGLE MAP API - GeocodeController
 
 * Return a route from start and end location latitude and longitude
 
 	GET: http://localhost:8000/v1/geocode/route
+	
+	Ex: http://localhost:8000/v1/geocode/route?start_latitude=51.506618&start_longitude=-0.127637&end_latitude=51.506618&end_longitude=-0.127637
 
 * Return address corresponding to provided latitude and longitude.
 
