@@ -78,6 +78,19 @@ The server provide RESTful web services for the pull-based interaction between t
 
 	GET: http://localhost:8000/v1/geocode/address
 
+## Taxi Booking Controller - BookingController
+
+* A controller class for receiving and handling all booking related transactions
+
+	POST: makeBooking
+	GET: bookingHistory
+	GET: findBooking
+	GET: findBookingsForUser
+	GET: incompleteBookings
+	POST: updateBooking
+	POST: acceptBooking
+	
+
 ## Config Service 
 
 	http://localhost:8888/booking-service/master
