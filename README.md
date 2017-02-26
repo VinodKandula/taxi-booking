@@ -39,19 +39,19 @@ The server provide RESTful web services for the pull-based interaction between t
 ![taxi-state-pattern-class-diagram](/documentation/images/taxi-state-pattern-class-diagram.gif)
 
 
-### Taxi Booking Service API
+# Taxi Booking Service API
 
-# Setup the Database - TestController
+## Setup the Database - TestController
 
 	http://localhost:8000/v1/test/setup
 
-# Taxi Controller
+## Taxi Controller
 
 	GET: http://localhost:8000/v1/taxi/{id}
 
 	POST: http://localhost:8000/v1/taxi/{id}/location
 
-# GOOGLE MAP API - GeocodeController
+## GOOGLE MAP API - GeocodeController
 
 * Return a route from start and end location latitude and longitude
 
@@ -73,7 +73,7 @@ The server provide RESTful web services for the pull-based interaction between t
 
 	GET: http://localhost:8000/v1/geocode/address
 
-# Config Service 
+## Config Service 
 
 	http://localhost:8888/booking-service/master
 
@@ -83,7 +83,7 @@ The server provide RESTful web services for the pull-based interaction between t
 
 	http://localhost:8888/metrics
 
-# Discovery Service
+## Discovery Service
 
 	http://localhost:8761/
 
