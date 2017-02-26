@@ -11,7 +11,7 @@ The server provide RESTful web services for the pull-based interaction between t
 
 ## UseCase Diagram - Taxi Booking Module
 
-![Activity Diagram - Accept Taxi Booking](/documentation/images/Activity Diagram - Accept Taxi Booking.png)
+![taxi-booking-usecase-diagram](/documentation/images/UseCase Diagram Taxi Booking Module.png)
 
 ## Activity Diagram - Taxi Booking
 
@@ -21,9 +21,6 @@ The server provide RESTful web services for the pull-based interaction between t
 
 ![Activity Diagram - Accept Taxi Booking](/documentation/images/Activity Diagram - Accept Taxi Booking.png)
 
-## UseCase Diagram - Taxi Booking Module
-
-![taxi-booking-usecase-diagram](/documentation/images/UseCase Diagram Taxi Booking Module.png)
 
 ## Class Diagram - Taxi Booking Domain Model
 
