@@ -24,6 +24,8 @@ The server provide RESTful web services for the pull-based interaction between t
 
 ## Class Diagram - Taxi Booking Domain Model
 
+![taxibooking-domain-model-class-diagram](/documentation/images/taxibooking-domain-model-class-diagram.png)
+
 ![taxi-booking-domain-model-diagram](/documentation/images/domain-model-class-diagram.png)
 
 ## Class Diagram - Taxi Booking State Pattern
