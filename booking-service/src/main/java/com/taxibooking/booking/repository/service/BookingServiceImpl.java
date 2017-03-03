@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.taxibooking.booking.model.Account;
 import com.taxibooking.booking.model.Route;
@@ -23,6 +24,7 @@ import com.taxibooking.location.service.google.InvalidGoogleApiResponseException
  *
  * @author vinodkandula
  */
+@Component
 public class BookingServiceImpl implements BookingService {
 
 	@Autowired

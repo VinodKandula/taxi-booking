@@ -1,5 +1,6 @@
 package com.taxibooking.location.rest;
 
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -16,6 +17,7 @@ import com.taxibooking.booking.model.taxi.Taxi;
 import com.taxibooking.booking.repository.LocationRepository;
 import com.taxibooking.booking.repository.TaxiRepository;
 import com.taxibooking.booking.util.DataMapper;
+import com.taxibooking.location.track.LocationTrackingService;
 
 /**
  * Controller class for taxis.
@@ -28,6 +30,9 @@ public class TaxiController {
 
     private static final Logger LOGGER = Logger.getLogger(TaxiController.class.getName());
 
+    @Autowired
+    private LocationTrackingService locationTrackingService;
+    
     @Autowired
     private LocationRepository locationRepository;
     
@@ -57,8 +62,12 @@ public class TaxiController {
             Location location = this.mapper.readValue(message, Location.class);
 
             // drivers should only be able to update there own taxi.
-            // event time is based on current server time.
             locationRepository.save(location);
+            
+            // event time is based on current server time.
+            this.locationTrackingService.updateLocation(
+                    id, location.getLatitude(), location.getLongitude(), new Date().getTime());
+
             
             return location;
             
